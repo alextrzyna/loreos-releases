@@ -58,22 +58,9 @@ Navigate to the [releases](releases/) directory and choose your version, or use 
 1. Download `LoreOS-macos.dmg` from the releases directory
 2. Double-click the DMG file to mount it
 3. Drag the LoreOS app to your Applications folder
-4. **Important**: Since the app is not notarized, you need to remove the quarantine flag:
+4. Double-click LoreOS to run the game
 
-   **Option 1 - Using Terminal (Recommended):**
-   ```bash
-   # Remove quarantine flag
-   xattr -cr /Applications/LoreOS.app
-   ```
-
-   **Option 2 - Using System Settings:**
-   - Try to open the app (it will be blocked)
-   - Go to System Settings → Privacy & Security
-   - Look for "LoreOS was blocked..." message
-   - Click "Open Anyway"
-   - Enter your password when prompted
-
-5. After removing quarantine, you can run LoreOS normally from your Applications folder
+**✅ Signed and Notarized**: Starting with v0.3.4-alpha, the macOS app is properly signed with an Apple Developer ID and notarized by Apple. You should not see any security warnings when opening the app.
 
 **Note for Apple Silicon Macs**: The app is a Universal build and will run natively on both Intel and Apple Silicon Macs.
 
@@ -103,9 +90,9 @@ Navigate to the [releases](releases/) directory and choose your version, or use 
 ### Common Issues
 
 #### macOS: "Cannot be opened because it is from an unidentified developer"
-- Follow the quarantine removal instructions above
-- Make sure you've downloaded the file completely
-- Try re-downloading if the issue persists
+- This should not occur with v0.3.4-alpha and later (app is signed and notarized)
+- For older versions, you may need to right-click the app and select "Open"
+- Or go to System Settings → Privacy & Security and click "Open Anyway"
 
 #### Linux: "Permission denied" when running
 - Ensure you've made the file executable with `chmod +x`
