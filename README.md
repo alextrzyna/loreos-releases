@@ -169,7 +169,7 @@ https://github.com/alextrzyna/aisland/issues
 
 ## 📜 License
 
-LoreOS is distributed under the MIT License. See the main repository for details.
+See the main repository for license details.
 
 ## 🤝 Contributing
 
