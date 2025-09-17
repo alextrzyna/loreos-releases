@@ -4,7 +4,9 @@ Welcome to the official release repository for **LoreOS**, an AI-powered island 
 
 ## 📥 Latest Release
 
-The latest stable release can always be found in the [releases/latest](releases/latest) directory.
+The latest release can always be found in the [Releases](https://github.com/alextrzyna/loreos-releases/releases) section of this repository.
+
+[![Latest Release](https://img.shields.io/github/v/release/alextrzyna/loreos-releases?include_prereleases&label=Latest%20Release)](https://github.com/alextrzyna/loreos-releases/releases/latest)
 
 ## 🎮 Available Platforms
 
@@ -17,20 +19,21 @@ LoreOS is available for the following platforms:
 
 ## 📦 Download Instructions
 
-### Quick Download Links
+### Quick Download
 
-Navigate to the [releases](releases/) directory and choose your version, or use the latest version:
-
-- 🐧 **Linux**: `LoreOS-linux.tar.gz`
-- 🪟 **Windows**: `LoreOS-windows.zip`
-- 🍎 **macOS**: `LoreOS-macos.dmg`
-- 🌐 **Web**: `LoreOS-web.zip`
+1. Go to the [Releases page](https://github.com/alextrzyna/loreos-releases/releases)
+2. Find the version you want to download (latest is at the top)
+3. Download the appropriate file for your platform:
+   - 🐧 **Linux**: `LoreOS-linux.tar.gz`
+   - 🪟 **Windows**: `LoreOS-windows.zip`
+   - 🍎 **macOS**: `LoreOS-macos.dmg`
+   - 🌐 **Web**: `LoreOS-web.zip`
 
 ## 🚀 Installation Instructions
 
 ### Linux
 
-1. Download `LoreOS-linux.tar.gz` from the releases directory
+1. Download `LoreOS-linux.tar.gz` from the [Releases page](https://github.com/alextrzyna/loreos-releases/releases)
 2. Extract the archive:
    ```bash
    tar -xzvf LoreOS-linux.tar.gz
@@ -46,7 +49,7 @@ Navigate to the [releases](releases/) directory and choose your version, or use 
 
 ### Windows
 
-1. Download `LoreOS-windows.zip` from the releases directory
+1. Download `LoreOS-windows.zip` from the [Releases page](https://github.com/alextrzyna/loreos-releases/releases)
 2. Right-click the ZIP file and select "Extract All..."
 3. Navigate to the extracted folder
 4. Double-click `LoreOS.exe` to run the game
@@ -55,18 +58,18 @@ Navigate to the [releases](releases/) directory and choose your version, or use 
 
 ### macOS
 
-1. Download `LoreOS-macos.dmg` from the releases directory
+1. Download `LoreOS-macos.dmg` from the [Releases page](https://github.com/alextrzyna/loreos-releases/releases)
 2. Double-click the DMG file to mount it
 3. Drag the LoreOS app to your Applications folder
 4. Double-click LoreOS to run the game
 
-**✅ Signed and Notarized**: Starting with v0.3.4-alpha, the macOS app is properly signed with an Apple Developer ID and notarized by Apple. You should not see any security warnings when opening the app.
+**✅ Signed and Notarized**: The macOS app is properly signed with an Apple Developer ID and notarized by Apple. You should not see any security warnings when opening the app.
 
 **Note for Apple Silicon Macs**: The app is a Universal build and will run natively on both Intel and Apple Silicon Macs.
 
 ### Web Version
 
-1. Download `LoreOS-web.zip` from the releases directory
+1. Download `LoreOS-web.zip` from the [Releases page](https://github.com/alextrzyna/loreos-releases/releases)
 2. Extract the ZIP file
 3. Host the files on a web server (local or remote)
 
@@ -90,8 +93,8 @@ Navigate to the [releases](releases/) directory and choose your version, or use 
 ### Common Issues
 
 #### macOS: "Cannot be opened because it is from an unidentified developer"
-- This should not occur with v0.3.4-alpha and later (app is signed and notarized)
-- For older versions, you may need to right-click the app and select "Open"
+- This should not occur with signed and notarized releases
+- If it does, right-click the app and select "Open"
 - Or go to System Settings → Privacy & Security and click "Open Anyway"
 
 #### Linux: "Permission denied" when running
@@ -139,14 +142,15 @@ Navigate to the [releases](releases/) directory and choose your version, or use 
 
 ## 📝 Version History
 
-Check the [releases](releases/) directory for version-specific folders. Each version includes:
-- Platform-specific builds
-- `version.json` with build metadata
+All releases are available on the [Releases page](https://github.com/alextrzyna/loreos-releases/releases). Each release includes:
+- Platform-specific builds for Linux, Windows, macOS, and Web
 - SHA256 checksums for verification
+- Detailed release notes and installation instructions
+- Source commit reference from the main repository
 
 ## 🔐 Verifying Downloads
 
-Each release includes SHA256 checksums. To verify your download:
+Each release includes SHA256 checksums in the `SHA256SUMS.txt` file. To verify your download:
 
 ```bash
 # Linux/macOS
@@ -155,6 +159,8 @@ sha256sum -c SHA256SUMS.txt
 # Windows (PowerShell)
 Get-FileHash LoreOS-windows.zip -Algorithm SHA256
 ```
+
+Compare the output with the checksums provided in the release.
 
 ## 🐛 Bug Reports & Feedback
 
@@ -170,6 +176,14 @@ LoreOS is distributed under the MIT License. See the main repository for details
 Interested in contributing? Check out the main development repository:
 https://github.com/alextrzyna/aisland
 
+## 🔄 Automatic Updates
+
+New releases are automatically published here when tagged in the main repository. The build process includes:
+- Automated builds for all supported platforms
+- Code signing and notarization for macOS
+- SHA256 checksum generation
+- GitHub Release creation with all artifacts
+
 ---
 
-**Note**: This repository contains only release builds. For source code and development, please visit the main repository.
+**Note**: This repository serves as the distribution point for LoreOS releases. All binaries are hosted as GitHub Release assets to ensure efficient distribution without repository bloat. For source code and development, please visit the [main repository](https://github.com/alextrzyna/aisland).
